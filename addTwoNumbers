@@ -1,0 +1,17 @@
+def linkedlist(list1, list2):
+    i1 = [str(num) for num in list1]
+    i2 = [str(nums) for nums in list2]
+    a_string = ''.join(i1)
+    a1 = a_string[::-1]
+    b_string = ''.join(i2)
+    b1 = b_string[::-1]
+    anew = int(a1)
+    bnew = int(b1)
+    total = anew + bnew
+    newlist = list(map(int, str(total)))
+    print(newlist[::-1])
+
+
+x = [7, 8, 9]
+y = [1, 8, 2]
+linkedlist(x,y)
